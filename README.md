@@ -5,8 +5,27 @@ Fast anchor regularized local linear model
 This work has been done at RIKEN AIP by Mathis Petrovich and Makoto Yamada.
 
 
-## Requirements
-TODO
+## Installation
+```bash
+git clone https://github.com/Mathux/fall.git
+cd fall
+```
+
+### Python requirements
+This code needs Python 3 and the following packages:
+
+* click
+* numpy
+* pandas
+* optuna
+* sklearn
+* matplotlib
+
+The packages can be installed with:
+
+```bash
+pip install --user -r requirements.txt
+```
 
 ## Usage
 The implementation of our method can be found in ``src/models/fall.py``. Please import ``Fall`` from this file and use it as a sklearn model (``model.fit`` and ``model.predict``)
@@ -53,6 +72,11 @@ Options:
   --help                          Show this message and exit.
 ```
 
+For exemple to test our method on the fishtoxicity dataset for 1 epochs, by doing a 3-cross-validation with 3 seconds to find the hyper parameters:
+
+```bash
+python main.py --dataset fishtoxicity --model fall --cv 3 --nepochs 1 --timeout 3
+```
 
 ## Figures
 You can recreate the figures of the paper by running this.
