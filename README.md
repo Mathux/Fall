@@ -19,9 +19,13 @@ This code needs Python 3 and the following packages:
 * pandas
 * optuna
 * sklearn
-* matplotlib
 
-The packages can be installed with:
+Optional packages:
+
+* matplotlib (for the figures)
+* xlrd (for loading Excel format datasets)
+
+All the packages can be installed with:
 
 ```bash
 pip install --user -r requirements.txt
