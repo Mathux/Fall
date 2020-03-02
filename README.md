@@ -7,7 +7,7 @@ This work has been done at RIKEN AIP by Mathis Petrovich and Makoto Yamada.
 
 ## Installation
 ```bash
-git clone https://github.com/Mathux/fall.git
+git clone https://github.com/Mathux/Fall.git
 cd fall
 ```
 
